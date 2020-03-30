@@ -1,0 +1,11 @@
+{% extends 'basetemp.html' %}
+    {%block content%}
+    <title>hey this is the dog gardens list</title> </br>
+    <h1>Hi this is my dog gardens list:</h1>
+    <div>'gardens:'
+    {% for garden in gardens %}
+        <li><a href = '/dog_gardens/{{garden.name}}'>{{garden.name}}</a></li>
+        <p>{{  garden.street}}</p>
+    {% endfor %}
+    </div>
+{%endblock%}

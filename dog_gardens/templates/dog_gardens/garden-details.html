@@ -1,0 +1,11 @@
+{% extends 'basetemp.html' %}
+    {%block content%}
+    <title>{{garden.name}} </title> </br>
+    <h1>{{garden.name}} :</h1>
+        <p>
+            name : {{garden.name}} <br>
+            street : {{garden.street}} <br>
+            size : {{garden.size}}
+        </p>
+        <img src={{garden.thumb.url}}>
+{%endblock%}
